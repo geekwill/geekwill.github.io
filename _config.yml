@@ -67,7 +67,6 @@ theme: concise
 
 duoshuo:
   enable: true
-  key: 2dc46b5e4fb0f8d2c29f8cd638d340fc
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
