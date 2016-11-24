@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: GeekWill
+title: Will
 subtitle: 看着闺女，哎呀，萌死我啦！
 description: 乱搞一气   瞎搞一生
-author: GeekWill
+author: Will
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.willblog.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
