@@ -10,6 +10,9 @@ author: Will
 language: zh-Hans
 timezone:
 
+menu:
+  About: /about
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.willblog.cn
