@@ -2,20 +2,26 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
-title: Will
-subtitle: 看着闺女，哎呀，萌死我啦！
-description: 乱搞一气   瞎搞一生
-author: Will
-language: zh-Hans
-timezone:
+# config
+email: geek.willyu@gmail.com
+github: https://github.com/geekwill
+weibo: 
 
 menu:
   About: /about
 
+# Site
+title: Will | Will的个人博客站点
+subtitle:
+description: code，学历，交流，想法，随笔，思考，感叹，瞬间，笔记...
+author: John Doe
+language:
+timezone:
+favicon: /favicon.ico
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.willblog.cn
+url: http://www.geekcode.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
