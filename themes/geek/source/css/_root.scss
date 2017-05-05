@@ -9,6 +9,10 @@
   .logo{
     font-size: 8rem;
     line-height: 5.7rem;
+    transition: all 1s;
+    &:hover{
+      animation:logoanimation linear 1s infinite;
+    }
   }
   .nav{
     line-height: 1;
@@ -70,6 +74,10 @@
   .post-item-title{
     font-size: 1.3rem;
     color: $black-color;
+    transition: color 0.4s;
+    &:hover{
+      color: $base-color;
+    }
   }
   .post-item-mark{
     display: flex;
@@ -116,6 +124,10 @@
     img{
       width: 100%;
     }
+
+    a{
+      color: $base-color;
+    }
   }
 }
 
@@ -123,4 +135,15 @@
 .comment{
   width: 100%;
   margin-top: 4rem;
+}
+
+/*animation动画效果*/
+@keyframes logoanimation
+{
+  from {
+    transform:rotateY(0deg);
+  }
+  to {
+    transform:rotateY(180deg);
+  }
 }
