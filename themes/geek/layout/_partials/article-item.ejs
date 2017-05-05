@@ -1,0 +1,16 @@
+<article class="post-item">
+  <a href="<%- url_for(post.path) %>" class="post-item-title"><%- post.title %></a>
+  <div class="post-item-mark">
+    <p><%- date(post.date, 'MM-DD') %></p>
+    <ul>
+      <% if (post.tags && post.tags.length){ %>
+        <% post.tags.forEach(function(tag, i){ %> 
+          <li><%-tag.name%><li>
+        <% }) %>
+      <% } %>
+    </ul>
+  </div>
+  <div class="post-item-snippet">
+    <%- post.excerpt %>
+  </div>
+</article>

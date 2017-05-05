@@ -1,7 +1,7 @@
 ---
 title: about
-date: 2017-04-27 18:10:30
-type: "about"
+date: 2017-05-05 16:05:56
 ---
 
-about
+
+A Java programmer!

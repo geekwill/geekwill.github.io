@@ -1,0 +1,126 @@
+
+
+/*头部导航布局*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $base-color;
+  .logo{
+    font-size: 8rem;
+    line-height: 5.7rem;
+  }
+  .nav{
+    line-height: 1;
+    ul{
+      li{
+        display: inline-block;
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+/*底部布局*/
+.footer{
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.6rem;
+  border-top: 1px solid $border-color;
+  color: $gray-color;
+}
+
+/*中心内容布局*/
+.main{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:before{
+    content: '';
+    height: 8px;
+    background-color: $base-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .content{
+    flex: 1;
+    padding: 3rem 1rem;
+  }
+}
+
+@media (min-width:751px) {
+  .main{
+    width: 50vw;
+    margin: 0 auto;
+
+    .content{
+      padding: 3rem 2rem;
+    }
+  }
+}
+
+/*首页文章推荐*/
+.post-item{
+  margin: 1rem 0 4rem;
+  padding: 0 0 1rem;
+  border-bottom: 1px solid $border-color;
+  .post-item-title{
+    font-size: 1.3rem;
+    color: $black-color;
+  }
+  .post-item-mark{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    ul{
+      li{
+        display: inline-block;
+        margin-left: 0.6rem;
+      }
+    }
+  }
+  .post-item-snippet{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.6;
+    text-align: justify;
+    color: $font-color;
+  }
+}
+
+/*文章内容页*/
+.article{
+
+  .article-title{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+
+  .article-time{
+    text-align: center;
+    line-height: 2;
+    margin: 0 0 2rem;
+  }
+
+  .article-content{
+    line-height: 1.5;
+    text-align: justify;
+    color: $font-color;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+/*评论*/
+.comment{
+  width: 100%;
+  margin-top: 4rem;
+}

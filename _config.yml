@@ -8,13 +8,13 @@ github: https://github.com/geekwill
 weibo: 
 
 menu:
-  About: /
+  About: /about
 
 # Site
 title: Will | Will的个人博客站点
 subtitle:
 description: code，学历，交流，想法，随笔，思考，感叹，瞬间，笔记...
-author: John Doe
+author: Will
 language:
 timezone:
 favicon: /favicon.ico
@@ -73,10 +73,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: concise
+theme: geek
 
 duoshuo:
   enable: true
+  short_name: willblogsir
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

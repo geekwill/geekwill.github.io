@@ -1,0 +1,12 @@
+<article class="article">
+    <h1 class="article-title"><%- post.title %></h1>
+    <p class="article-time"><time><%- date(post.date, 'YYYY-MM-DD') %></time></p>
+    <div class="article-content">
+        <%- post.content %>
+    </div>
+
+    <% if (page.comments && config.duoshuo.enable ) { %>
+        <%- partial('comment', {post: post}) %>
+    <% } %>
+</article>
+

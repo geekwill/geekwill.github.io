@@ -25,7 +25,7 @@ categories: Mac
 
 ​ Finder > 显示 > 显示标签页栏，显示路径栏，显示状态栏，显示边栏。
 以上是我本人根据个人习惯设置，效果如下：
-![](/images/2015-12-21/Mac-1.png)
+![](/images/2016-12-05/Mac-1.png)
 ### Mac神器之   HomeBrew
 首先，给大家介绍一个Mac上必不可少的神器，Home Brew，为什么先要介绍它，因为我们接下来的APP都需要用它来安装。
 在开始安装Home Brew 之前，请先安装苹果的Xcode，因为有很多依赖都需要它来安装，如果不想安装的话，也可以自行google单独安装，但是这里我推荐大家装，因为不光省事，而且，既然是前端开发者（本人），以后做app项目的话，你少不了模拟器的，是吧，还是装了吧。
@@ -81,7 +81,7 @@ $ source ~/.zshrc
 $ brew cask install iterm2
 ```
 安装成功后，在iTerm>Preferences>Profiles>Default里修改自己的颜色，以及背景可以透明哟，还希望大家参考官网慢慢的探索去吧....
-![](/images/2015-12-21/Mac-3.png)
+![](/images/2016-12-05/Mac-3.png)
 
 ### Mac神器之  Alfred2
 还是那句话Mac的Spotlight现在做了相当好啦，但是还有比相当好更好的，那就是Alfred2，结合Powerpack，我们可以体验神一样的享受[官网](https://www.alfredapp.com/)，安装
@@ -96,7 +96,7 @@ command + 空格，输入 哈哈 回车，是不是自动打开默认的浏览�
 推荐个网站[有很多很好玩的哟](http://www.alfredworkflow.com/)
 使用方法，下载，导入，然后 呼出Alfred输入关键字，回车，奇迹出现，举个例子：
 下载这个[https://github.com/liyaodong/AlfredWorkflows](https://github.com/liyaodong/AlfredWorkflows)，导入，然后呼出Alfred，输入： say my name is will，回车，我操，他竟然最近会读哟，我操，好屌.....
-![](/images/2015-12-21/Mac-4.png)
+![](/images/2016-12-05/Mac-4.png)
 
 ### APP安装
 既然有了这么屌的电脑，so，那必须少不了牛叉的软件啦，下面我针对我日常所用的APP给大家推荐。
@@ -137,26 +137,23 @@ $ brew cask update //更新软件包
 $ brew cask cleanup //清空缓存
 ```
 以上部分软件过大或者因为收费，不能使用brew cask安装的，请大家自行下载安装，需要的请联系我，我云盘分享给你（有破解哟）。
-![](/images/2015-12-21/Mac-2.png)
+![](/images/2016-12-05/Mac-2.png)
 
 ### 开发模块安装
-* Node
+Node
 
-  ``` base
-  $ brew install node //安装最新的node
-  //如果你想安装指定版本的node，推荐使用nvm，但是本人不知道为什么，安装之后，重新开启终端就不行了，一直没成功，求指教啊，但是我还是用brew安装了node4.0的版本啦。
-  $ brew search node
-  homebrew/versions/node010        homebrew/versions/node06         leafnode                         nodebrew
-  homebrew/versions/node012        homebrew/versions/node08         node                             nodeenv
-  homebrew/versions/node04         homebrew/versions/node4-lts ✔    node-build                       nodenv
-  Caskroom/cask/mindnode-pro       Caskroom/cask/node               Caskroom/cask/nodeclipse         Caskroom/cask/soundnode
-  Caskroom/cask/node-profiler      Caskroom/cask/nodebox            Caskroom/cask/printnode
-  //本人安装了homebrew/versions/node4-lts4.0稳定版
-  ```
+``` base
+$ brew install node //安装最新的node
+//如果你想安装指定版本的node，推荐使用nvm，但是本人不知道为什么，安装之后，重新开启终端就不行了，一直没成功，求指教啊，但是我还是用brew安装了node4.0的版本啦。
+$ brew search node
+homebrew/versions/node010        homebrew/versions/node06         leafnode                         nodebrew
+homebrew/versions/node012        homebrew/versions/node08         node                             nodeenv
+homebrew/versions/node04         homebrew/versions/node4-lts ✔    node-build                       nodenv
+Caskroom/cask/mindnode-pro       Caskroom/cask/node               Caskroom/cask/nodeclipse         Caskroom/cask/soundnode
+Caskroom/cask/node-profiler      Caskroom/cask/nodebox            Caskroom/cask/printnode
+//本人安装了homebrew/versions/node4-lts4.0稳定版
+```
 
-* Git
+Git
 
-  由于xcode自带了git，所以暂且还是用的自带的，后期可能会自己安装最新版的git，到时候在更新吧。
-
-
-—————————————————————等待更新—————————————————————
+由于xcode自带了git，所以暂且还是用的自带的，后期可能会自己安装最新版的git，到时候在更新吧。

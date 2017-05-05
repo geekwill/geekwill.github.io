@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+    <title><%= config.title %></title>
+    <%- partial('_partials/head') %>
+  </head>
+  <body>
+    <main class="main">
+      <%- partial('_partials/header') %>
+
+      <div class="content">
+        <%- body %>
+      </div>
+
+      <%- partial('_partials/footer') %>
+    </main>
+  </body>
+</html>

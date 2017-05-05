@@ -1,0 +1,12 @@
+<header class="header">
+  <a href="<%- config.url %>" class="logo">W</a>
+  <nav class="nav">
+    <ul>
+      <% if (config.menu) { %>
+        <% for (var i in config.menu){ %>
+            <li><a href="<%- url_for(config.menu[i]) %>"><%= i %></a></li>
+          <% } %>
+      <% } %>
+    </ul>
+  </nav>
+</header>
