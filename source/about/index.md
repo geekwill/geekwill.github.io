@@ -8,6 +8,11 @@ date: 2017-05-05 16:05:56
 > A Java programmer!
 > __我现在忍辱负重的一切，都将成为我用来讽刺你的资本。__
 
+### Contact
+> [__GitHub__：https://github.com/geekwill](https://github.com/geekwill)
+> [__Blog__：http://www.geekcode.me](http://www.geekcode.me)
+> [__Email__：geek.willyu@gmail.com](mailto:geek.willyu@gmail.com)
+
 ### Skill
 > Front-end:
 > - HTML5
@@ -15,6 +20,7 @@ date: 2017-05-05 16:05:56
 > - JavaScript / ES6
 > - Webpack, Gulp
 > - React, Redux, ReactNaitve
+> - Git, SVN
 >
 > Backend:
 > - Java
