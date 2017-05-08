@@ -20,6 +20,9 @@
       li{
         display: inline-block;
         margin: 0 1rem;
+        a{
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -52,6 +55,9 @@
   .content{
     flex: 1;
     padding: 3rem 1rem;
+    a{
+      color: $font-color;
+    }
   }
 }
 
@@ -96,7 +102,6 @@
     margin-top: 0.5rem;
     font-size: 0.9rem;
     width: 100%;
-    line-height: 1.6;
     text-align: justify;
     color: $font-color;
   }
@@ -118,9 +123,7 @@
   }
 
   .article-content{
-    line-height: 1.5;
     text-align: justify;
-    color: $font-color;
     img{
       width: 100%;
     }
