@@ -16,8 +16,8 @@ tags: Redux React
 
 ### Action
 先来看下官方的定义
-+ Action 是把数据从应用传到 store 的有效载荷。它是 store 数据的唯一来源。
-+ Action 本质上是 JavaScript 普通对象。我们约定，action 内必须使用一个字符串类型的 type 字段来表示将要执行的动作。
+> + Action 是把数据从应用传到 store 的有效载荷。它是 store 数据的唯一来源。
+> + Action 本质上是 JavaScript 普通对象。我们约定，action 内必须使用一个字符串类型的 type 字段来表示将要执行的动作。
 
 这两句话很好理解，action是用来操作数据的来源，换句话说就是应用的所有数据都应该通过action这个普通的对象去操作，那我就会问，你说action操作数据，那它怎么操作的？我那么多数据，我怎么知道操作那个啊？所有第二句话就给了答案，action就是个普通的对象，但是约定的这个对象里必须要有一个type这个字段，就是用来标识着，你要操作哪条数据，或者哪个动作。
 
@@ -33,7 +33,7 @@ function addTodo(text) {
 
 ### Reducer
 惯例，先看看官方的定义
-+ Action 只是描述了有事情发生了这一事实，并没有指明应用如何更新 state。而这正是 reducer 要做的事情。
+> + Action 只是描述了有事情发生了这一事实，并没有指明应用如何更新 state。而这正是 reducer 要做的事情。
 
 咱先别管啥state，看这句话，很明白的，告诉我们，action告诉我们，我要操作某条数据，比如：我要增加一条todo，那我要怎么操作呢？操作成啥样子呢？所以reducer是来解决疑问的，那怎么操作，操作成啥样就需要reducer来告诉我们啦。同样的，reducer 就是一个纯函数，接收旧的 state 和 action，返回新的 state。这里需要提醒下，保持 reducer 纯净非常重要。永远不要在 reducer 里做这些操作：
 + 修改传入参数
@@ -67,8 +67,8 @@ function todos(state = initialState, action) {
 
 ### Store
 惯例
-+ 在前面的章节中，我们学会了使用 action 来描述“发生了什么”，和使用 reducers 来根据 action 更新 state 的用法。
-+ 再次强调一下 Redux 应用只有一个单一的 store。当需要拆分数据处理逻辑时，你应该使用 reducer 组合 而不是创建多个 store。
+> + 在前面的章节中，我们学会了使用 action 来描述“发生了什么”，和使用 reducers 来根据 action 更新 state 的用法。
+> + 再次强调一下 Redux 应用只有一个单一的 store。当需要拆分数据处理逻辑时，你应该使用 reducer 组合 而不是创建多个 store。
 
 我们先来看看store创建的代码：
 ``` js
@@ -119,12 +119,12 @@ const todoApp = combineReducers({
 ```
 有木有很熟悉，其实就是将我们初始化的两个state放在了一个对象容器里，好吧，你知道了吧，那我们在从reducer取数据的时候是不是就明白了很多。
 好吧，看样子是否已经大功告成啦，但是还有一个问题，那就是我们咋调用action去执行操作啊？那我们先看看官方对store的职责介绍：
-Store 有以下职责：
-+ 维持应用的 state
-+ 提供 getState() 方法获取 state
-+ 提供 dispatch(action) 方法更新 state
-+ 通过 subscribe(listener) 注册监听器
-+ 通过 subscribe(listener) 返回的函数注销监听器
+> Store 有以下职责：
+> + 维持应用的 state
+> + 提供 getState() 方法获取 state
+> + 提供 dispatch(action) 方法更新 state
+> + 通过 subscribe(listener) 注册监听器
+> + 通过 subscribe(listener) 返回的函数注销监听器
 
 1，2就不说啦，看着就明白啦，我们先看第三个，提供 dispatch(action) 方法更新 state，dispatch的参数就是我们的action啦，比如我们增加todo的操作：
 ``` js
