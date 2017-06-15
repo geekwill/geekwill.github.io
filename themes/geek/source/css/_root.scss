@@ -30,10 +30,9 @@
 
 /*底部布局*/
 .footer{
-  line-height: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
-  font-size: 0.6rem;
-  border-top: 1px solid $border-color;
+  font-size: 0.8rem;
   color: $gray-color;
 }
 
@@ -54,7 +53,7 @@
   }
   .content{
     flex: 1;
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 1rem;
     a{
       color: $font-color;
     }
@@ -67,16 +66,16 @@
     margin: 0 auto;
 
     .content{
-      padding: 3rem 2rem;
+      padding: 3rem 2rem 1rem;
     }
   }
 }
 
 /*首页文章推荐*/
 .post-item{
-  margin: 1rem 0 4rem;
+  margin: 1rem 0 2rem;
   padding: 0 0 1rem;
-  border-bottom: 1px solid $border-color;
+  // border-bottom: 1px solid $border-color;
   .post-item-title{
     font-size: 1.3rem;
     color: $black-color;
