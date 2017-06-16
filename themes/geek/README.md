@@ -20,12 +20,12 @@ hexo theme [Demo](http://www.geekcode.me)
 theme: geek
 ```
 
-设置多说评论组件，增加下边代码要_config.yml文件
+设置有言评论组件，增加下边代码要_config.yml文件
 
 ```
-duoshuo:
+uyan:
   enable: true
-  short_name: willblogsir
+  uid: 1314520
 ```
 
 设置menu菜单，还是增加代码到_config.yml文件
