@@ -5,6 +5,7 @@ tags: Redux React
 ---
 该来的总会来的，前段时间看了ReactJS，还没来得及记录学习的笔记呢（有时间补上），就该到了数据流的处理，今天的主角：Redux，最近火的不要不要的单向数据流框架，知道他的存在也同样是因为React。话说每学一个东西之前，是不是都需要先知道这东西是干什么的，或者说他存在的目的，同样我在学之前我也弄清楚Redux是干啥的，能干啥？
 >_Redux 是 JavaScript 状态容器，提供可预测化的状态管理。_
+<!-- more -->
 
 对，这句话是官方中文文档介绍的第一句话，其实，我看这就话还是很不懂（不知道多少人跟我一样🐷），所以我有google一下，懂了但最后又不懂啦，有没有绝世武功快要炼成的感觉。
 很幸运的是，我找到了一个更通熟易懂的介绍，来之知乎的 @Wang Namelos 大神，感谢你，[如果通熟易懂的理解Redux](https://www.zhihu.com/question/41312576?sort=created)，里边是结合React来讲的Redux，也正是我想要的，因为我就是把Redux用来配合React的，很推荐大家也看看。
@@ -12,7 +13,6 @@ tags: Redux React
 <!-- 开始之前，我们需要一个实例项目，所以我图简单，就使用了React的[create-react-app](https://github.com/facebookincubator/create-react-app)新建一个React项目，然后调整一下我们需要的结构，项目我会放到GitHub上的，下载可以直接执行。
 
 有了项目，那我们接下来就来慢慢拆分理解它们。 -->
-<!-- more -->
 
 ### Action
 先来看下官方的定义

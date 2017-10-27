@@ -32,7 +32,6 @@
 .footer{
   padding-bottom: 3rem;
   text-align: center;
-  font-size: 0.8rem;
   color: $gray-color;
 }
 
@@ -77,11 +76,25 @@
   padding: 0 0 1rem;
   // border-bottom: 1px solid $border-color;
   .post-item-title{
+    display: block;
+    position: relative;
     font-size: 1.3rem;
     color: $black-color;
     transition: color 0.4s;
+    text-indent: 1.4rem;
     &:hover{
       color: $base-color;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 0;
+      top: 50%;
+      margin-top: -6px;
+      border-radius: 50%;
+      background-color: $base-color;
     }
   }
   .post-item-mark{
@@ -99,7 +112,6 @@
   }
   .post-item-snippet{
     margin-top: 0.5rem;
-    font-size: 0.9rem;
     width: 100%;
     text-align: justify;
     color: $font-color;
@@ -111,8 +123,8 @@
 
   .article-title{
     text-align: center;
-    font-weight: 300;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: normal;
   }
 
   .article-time{
