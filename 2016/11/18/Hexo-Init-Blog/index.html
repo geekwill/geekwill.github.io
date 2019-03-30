@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="刚刚接触博客的时候，百度一下全是github和jekyll的配对，而且当时学习前端时，看的视屏中老师页推荐jekyll的，so，就开始了jekyll的播客之旅，其实吧，体验还是不错的，毕竟有github大神在呢😄😄😄😄😄，但是在主题这方面，好像有点欠缺，然后在学习期间看的大神们的博客，各种炫酷叼炸天啊，所以，俺心动啦，经过我各种google，（这里赞扬下伟大的谷歌，恶心下伟大的天朝，当然">
+<meta name="keywords" content="hexo,github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用Hexo搭建Github免费博客">
+<meta property="og:url" content="http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/index.html">
+<meta property="og:site_name" content="hello code">
+<meta property="og:description" content="刚刚接触博客的时候，百度一下全是github和jekyll的配对，而且当时学习前端时，看的视屏中老师页推荐jekyll的，so，就开始了jekyll的播客之旅，其实吧，体验还是不错的，毕竟有github大神在呢😄😄😄😄😄，但是在主题这方面，好像有点欠缺，然后在学习期间看的大神们的博客，各种炫酷叼炸天啊，所以，俺心动啦，经过我各种google，（这里赞扬下伟大的谷歌，恶心下伟大的天朝，当然">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-30T04:04:10.636Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="利用Hexo搭建Github免费博客">
+<meta name="twitter:description" content="刚刚接触博客的时候，百度一下全是github和jekyll的配对，而且当时学习前端时，看的视屏中老师页推荐jekyll的，so，就开始了jekyll的播客之旅，其实吧，体验还是不错的，毕竟有github大神在呢😄😄😄😄😄，但是在主题这方面，好像有点欠缺，然后在学习期间看的大神们的博客，各种炫酷叼炸天啊，所以，俺心动啦，经过我各种google，（这里赞扬下伟大的谷歌，恶心下伟大的天朝，当然">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>利用Hexo搭建Github免费博客</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="https://github.com/geekwill">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/12/05/Mac-Init/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&text=利用Hexo搭建Github免费博客"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&is_video=false&description=利用Hexo搭建Github免费博客"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=利用Hexo搭建Github免费博客&body=Check out this article: http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&name=利用Hexo搭建Github免费博客&description=&lt;p&gt;刚刚接触博客的时候，百度一下全是github和jekyll的配对，而且当时学习前端时，看的视屏中老师页推荐jekyll的，so，就开始了jekyll的播客之旅，其实吧，体验还是不错的，毕竟有github大神在呢😄😄😄😄😄，但是在主题这方面，好像有点欠缺，然后在学习期间看的大神们的博客，各种炫酷叼炸天啊，所以，俺心动啦，经过我各种google，（这里赞扬下伟大的谷歌，恶心下伟大的天朝，当然我是砸墙而出的，你懂们的…）好到了很多不错的教程文章，然后我就参考了中文的hexo教程，（是不是有种不是好厨师的设计不是好程序员的赶脚）再然后我果断的借鉴（抄袭，美名其曰造轮子）了某大神(感谢)的主题，真心的好看，100个赞。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装hexo"><span class="toc-number">1.</span> <span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化hexo项目"><span class="toc-number">2.</span> <span class="toc-text">初始化hexo项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动服务"><span class="toc-number">3.</span> <span class="toc-text">启动服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署到Github"><span class="toc-number">4.</span> <span class="toc-text">部署到Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装主题"><span class="toc-number">5.</span> <span class="toc-text">安装主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#备注"><span class="toc-number">6.</span> <span class="toc-text">备注</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        利用Hexo搭建Github免费博客
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">hello code</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2016-11-18T02:36:21.000Z" itemprop="datePublished">2016-11-18</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/github/">github</a>, <a class="tag-link" href="/tags/hexo/">hexo</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>刚刚接触博客的时候，百度一下全是github和jekyll的配对，而且当时学习前端时，看的视屏中老师页推荐jekyll的，so，就开始了jekyll的播客之旅，其实吧，体验还是不错的，毕竟有github大神在呢😄😄😄😄😄，但是在主题这方面，好像有点欠缺，然后在学习期间看的大神们的博客，各种炫酷叼炸天啊，所以，俺心动啦，经过我各种google，（这里赞扬下伟大的谷歌，恶心下伟大的天朝，当然我是砸墙而出的，你懂们的…）好到了很多不错的教程文章，然后我就参考了中文的hexo教程，（是不是有种不是好厨师的设计不是好程序员的赶脚）再然后我果断的借鉴（抄袭，美名其曰造轮子）了某大神(感谢)的主题，真心的好看，100个赞。</p>
+<a id="more"></a>
+<p>好吧，不扯啦，下边就简单的介绍下步骤：<br>详细的请参考： <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo中文文档</a><br>1：确保你已经安装完成node跟git，没有的话自行<a href="https://www.google.com.hk/" target="_blank" rel="noopener">google</a></p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>查看下帮助命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 0.1.9</span><br><span class="line">os: Darwin 15.2.0 darwin x64</span><br><span class="line">http_parser: 2.5.0</span><br><span class="line">node: 4.2.3</span><br><span class="line">v8: 4.5.103.35</span><br><span class="line">uv: 1.7.5</span><br><span class="line">zlib: 1.2.8</span><br><span class="line">ares: 1.10.1-DEV</span><br><span class="line">icu: 56.1</span><br><span class="line">modules: 46</span><br><span class="line">openssl: 1.0.2e</span><br></pre></td></tr></table></figure></p>
+<p>证明安装成功，然后查看下帮助<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$ hexo help</span><br><span class="line">Usage: hexo &lt;command&gt;</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  help     Get help on Hexo.</span><br><span class="line">  init     Create a new Hexo folder.</span><br><span class="line">  version  Display version information.</span><br><span class="line"></span><br><span class="line">Global Options:</span><br><span class="line">  --config  Specify config file instead of using _config.yml</span><br><span class="line">  --cwd     Specify the CWD</span><br><span class="line">  --debug   Display all verbose messages in the terminal</span><br><span class="line">  --safe    Disable all plugins and scripts</span><br><span class="line">  --silent  Hide output on console</span><br><span class="line"></span><br><span class="line">For more help, you can use &apos;hexo help [command]&apos; for the detailed information</span><br><span class="line">or you can check the docs: http://hexo.io/docs/</span><br></pre></td></tr></table></figure></p>
+<h3 id="初始化hexo项目"><a href="#初始化hexo项目" class="headerlink" title="初始化hexo项目"></a>初始化hexo项目</h3><p>如上显示，</p>
+<ul>
+<li>help：帮助信息，</li>
+<li>init：创建新的hexo目录，</li>
+<li>version：不解释了吧，</li>
+</ul>
+<p>那我们就按照他说的创建一个新的hexo目录，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line">INFO  Copying data to ~/Documents/Workspaces/blog</span><br><span class="line">INFO  You are almost done! Don&apos;t forget to run &apos;npm install&apos; before you start blogging with Hexo!</span><br></pre></td></tr></table></figure></p>
+<p>显示如上创建成功，提示你在启动hexo之前需要执行npm install，这是因为我们要需要提前安装hexo的模块依赖，npm是啥，自己google哟….<br>执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd blog/ &amp;&amp; npm install</span><br></pre></td></tr></table></figure></p>
+<p>等待中……..安装成功后，我们再次执行帮助<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">$ hexo h</span><br><span class="line">Usage: hexo &lt;command&gt;</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  clean     Removed generated files and cache.</span><br><span class="line">  config    Get or set configurations.</span><br><span class="line">  deploy    Deploy your website.</span><br><span class="line">  generate  Generate static files.</span><br><span class="line">  help      Get help on a command.</span><br><span class="line">  init      Create a new Hexo folder.</span><br><span class="line">  list      List the information of the site</span><br><span class="line">  migrate   Migrate your site from other system to Hexo.</span><br><span class="line">  new       Create a new post.</span><br><span class="line">  publish   Moves a draft post from _drafts to _posts folder.</span><br><span class="line">  render    Render files with renderer plugins.</span><br><span class="line">  server    Start the server.</span><br><span class="line">  version   Display version information.</span><br><span class="line"></span><br><span class="line">Global Options:</span><br><span class="line">  --config  Specify config file instead of using _config.yml</span><br><span class="line">  --cwd     Specify the CWD</span><br><span class="line">  --debug   Display all verbose messages in the terminal</span><br><span class="line">  --draft   Display draft posts</span><br><span class="line">  --safe    Disable all plugins and scripts</span><br><span class="line">  --silent  Hide output on console</span><br><span class="line"></span><br><span class="line">For more help, you can use &apos;hexo help [command]&apos; for the detailed information</span><br><span class="line">or you can check the docs: http://hexo.io/docs/</span><br></pre></td></tr></table></figure></p>
+<p>是不是之前的多啦，我这里就说常用的几个，其他的看文档哦，</p>
+<ul>
+<li>clean 删除产生的文件和缓存</li>
+<li>deploy 部署你的站点</li>
+<li>init 创建新的hexo文件</li>
+<li>new 创建一个新的post（文章）</li>
+<li>server 启动服务</li>
+</ul>
+<h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><p>那我们还按着他说的来，咱先启动起来看看，是不是很神奇。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></p>
+<p>告诉我们hexo运行在 <a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://0.0.0.0:4000/</a>，Ctrl+C可以停止服务，<br>那我们就进入<a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://0.0.0.0:4000/</a>看看，我操真的可以了哟……</p>
+<p>光默认生成一篇文章也不行啊，我以后自己写怎么办？<br>好吧，Ctrl+C停止服务，新建一篇文章，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new first-post</span><br><span class="line">INFO  Created: ~/Documents/Workspaces/blog/source/_posts/first-post.md</span><br></pre></td></tr></table></figure></p>
+<p>然后在 source/_posts 目录下是不是多了个同名的文件，而且是.md的哟，你可以修改一下内容，在重启server。</p>
+<h3 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h3><p>那么问题来啦，怎么才能部署了让别人也能访问呢？<br>在执行之前，请确保你在github上已注册，并创建了对应的项目<br>打开根目录下的_config.yml，文件，最下边</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type:</span><br></pre></td></tr></table></figure>
+<p>修改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/***/blog.git #在仓库找到该仓库的ssh</span><br><span class="line">  branch: gh-pages #分支，这里为gh-pages</span><br></pre></td></tr></table></figure>
+<p>hexo的部署是借助插件自动部署github，所以我们需要提前安装安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>安装成功后执行：参考文档：<a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">部署</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>然后就可大家一起爽啦，然后发现，着主题太挫啦，然后我们看这个链接<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">主题大全</a>，<br>然后我笑啦，然后就没有然后啦</p>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>选择我们喜欢的主题，克隆主题，然后更新一下，以下主题是我自己写的一个，很简单，<a href="https://github.com/geekwill/geek" target="_blank" rel="noopener">hexo-theme-geek</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git@github.com:geekwill/geek.git</span><br><span class="line">$ cd theme/geek</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+<p>在然后修改们的_config.yml文件的</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: geek</span><br></pre></td></tr></table></figure>
+<p>启动我们的server，就可以看到真的主题的，是不是好看多啦……</p>
+<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>请仔细阅读根目录和主题目录下_config.yml，并尝试修改为自己的连接或者文字，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//导航菜单</span><br><span class="line">menu:</span><br><span class="line">  About: /about</span><br><span class="line"></span><br><span class="line">title: Will | Will的个人博客站点</span><br><span class="line">description: code，学历，交流，想法，随笔，思考，感叹，瞬间，笔记...</span><br><span class="line">author: Will</span><br><span class="line">favicon: /favicon.ico</span><br><span class="line">appicon: /app-icon.png</span><br><span class="line">url: http://www.geekcode.me</span><br><span class="line"></span><br><span class="line">//开启评论系统</span><br><span class="line">duoshuo:</span><br><span class="line">  enable: true</span><br><span class="line">  short_name: willblogsir</span><br></pre></td></tr></table></figure>
+<p>这些就可以体现在我们的博客上啦，仔细阅读，仔细阅读，仔细阅读，重要的说三遍。<br>到此为止吧，更多的参考文档哟….</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="https://github.com/geekwill">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装hexo"><span class="toc-number">1.</span> <span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化hexo项目"><span class="toc-number">2.</span> <span class="toc-text">初始化hexo项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动服务"><span class="toc-number">3.</span> <span class="toc-text">启动服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署到Github"><span class="toc-number">4.</span> <span class="toc-text">部署到Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装主题"><span class="toc-number">5.</span> <span class="toc-text">安装主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#备注"><span class="toc-number">6.</span> <span class="toc-text">备注</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&text=利用Hexo搭建Github免费博客"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&is_video=false&description=利用Hexo搭建Github免费博客"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=利用Hexo搭建Github免费博客&body=Check out this article: http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&title=利用Hexo搭建Github免费博客"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://www.geekcode.me/2016/11/18/Hexo-Init-Blog/&name=利用Hexo搭建Github免费博客&description=&lt;p&gt;刚刚接触博客的时候，百度一下全是github和jekyll的配对，而且当时学习前端时，看的视屏中老师页推荐jekyll的，so，就开始了jekyll的播客之旅，其实吧，体验还是不错的，毕竟有github大神在呢😄😄😄😄😄，但是在主题这方面，好像有点欠缺，然后在学习期间看的大神们的博客，各种炫酷叼炸天啊，所以，俺心动啦，经过我各种google，（这里赞扬下伟大的谷歌，恶心下伟大的天朝，当然我是砸墙而出的，你懂们的…）好到了很多不错的教程文章，然后我就参考了中文的hexo教程，（是不是有种不是好厨师的设计不是好程序员的赶脚）再然后我果断的借鉴（抄袭，美名其曰造轮子）了某大神(感谢)的主题，真心的好看，100个赞。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 will
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="https://github.com/geekwill">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
