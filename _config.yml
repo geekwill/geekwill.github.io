@@ -7,14 +7,11 @@ email: geek.willyu@gmail.com
 github: https://github.com/geekwill
 weibo: 
 
-menu:
-  Me: /about
-
 # Site
-title: Will | Will的个人博客站点
+title: hello code
 subtitle:
-description: code，学历，交流，想法，随笔，思考，感叹，瞬间，笔记...
-author: Will
+description: hello my world
+author: will
 language:
 timezone:
 favicon: /favicon.ico
@@ -73,7 +70,25 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: geek
+theme: cactus
+
+theme_config:
+  colorscheme: light
+  projects_url: https://github.com/geekwill
+  posts_overview:
+    show_all_posts: true
+  social_links:
+    github: https://github.com/geekwill
+    twitter: /
+    mail: mailto:geek.willyu@gmail.com
+  nav:
+    home: /
+    about: /about/
+    articles: /archives/
+    projects: https://github.com/geekwill
+  archive:
+    sort_updated: false
+  highlight: solarized-light
 
 uyan:
   enable: true
